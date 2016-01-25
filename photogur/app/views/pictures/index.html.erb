@@ -1,1 +1,9 @@
 <h1>Pictures</h1>
+
+<% @pictures.each do |picture| %>
+  <p><%= picture.title %>, <%= picture.artist %></p>
+  <!-- return the title of the pic, return the artist of the pic which then becomes
+  <p>The old church on the coast of White sea, Sergey Ershov</p>
+  -->
+  <img src="<%= picture.url %>">
+<% end %>
